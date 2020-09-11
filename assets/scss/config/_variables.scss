@@ -7,5 +7,34 @@ $dark-color : #141618;
 
 $breakpoints: (
     l: 960px
-)
+);
+//Paleta de Colores
 
+:root{
+    // --first-color: #007bdf;
+    --first-color: #98a8b6;
+}
+// Variables de Apilamiento (z-index)
+:root{
+    --z-back: -10; //para los de atras
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+// Variables de Tipografia
+:root{
+    --h1-font-size: 2rem;
+    --body-font-size: .9rem;
+    --small-font-size: .75rem;
+
+    @include from(l){
+        --h1-font-size: 2.5rem;
+        --body-font-size: 1rem;
+        --small-font-size: .8rem;
+    }
+
+
+
+
+}
